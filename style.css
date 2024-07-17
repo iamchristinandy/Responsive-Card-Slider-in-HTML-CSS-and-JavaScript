@@ -55,8 +55,11 @@ body {
     cursor: pointer;
     background: white;
     border: 1px solid transparent;
+    transition: 0.2s ease;
 }
 
 .card-list .card-item .message-button:hover{
-    
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;  
+    color: white;
 }
