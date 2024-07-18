@@ -16,9 +16,15 @@ body {
     background: url("images/bg.jpg") #030728 no-repeat center;
 }
 
+.slider-wrapper {
+    overflow: hidden;
+    max-width:1200px;
+    margin: 0 70px 55px;
+}
 .card-list .card-item {
     color: white;
-    width: 400px;
+    user-select: none;
+    /* width: 400px; */
     padding: 35px;
     display: flex;
     flex-direction: column;
@@ -36,7 +42,6 @@ body {
     border-radius: 50%;
     border: 3px solid white;
     padding: 4px;
-
 }
 
 .card-list .card-item .user-profession {
@@ -62,4 +67,21 @@ body {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid white;  
     color: white;
+}
+
+.slider-wrapper .swipper-pagination-bullet {
+    background: white;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color:white;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+
 }
