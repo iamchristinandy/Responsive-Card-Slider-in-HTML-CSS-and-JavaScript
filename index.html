@@ -5,21 +5,58 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Card Slider HTML and CSS</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        <!-- Linking to swiper Js -->
     </head>
     <body>
-        <div class="container">
+        <div class="container-swiper">
             <div class="slider-wrapper">
-                <div class="card-list">
-                    <div class="card-item">
+                <div class="card-list swipper-wrapper">
+                    <div class="card-item swiper-slide">
                        <img src="images/Image - 1.jpg" alt="User Image" class="user-image"> 
                        <h2 class="user-name">Andrews Baah Kwafo</h2>
                        <p class="user-profession">Software Developer</p>
-                       <button class="message-button"> Message</button>
+                       <button class="message-button">Learn More</button>
                     </div>
+
+                        <div class="card-item swiper-slide">
+                           <img src="images/Image - 2.jpg" alt="User Image" class="user-image"> 
+                           <h2 class="user-name">Aning Obed</h2>
+                           <p class="user-profession">Frontend Developer</p>
+                           <button class="message-button">Learn More</button>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="images/Image -3.jpg" alt="User Image" class="user-image"> 
+                            <h2 class="user-name">Kwame Mireku Asiedu</h2>
+                            <p class="user-profession">UI/UX Designer</p>
+                            <button class="message-button">Learn more</button>
+                        </div>
+
+                      
+                        <div class="card-item swiper-slide">
+                               <img src="images/Image - 4.jpg" alt="User Image" class="user-image"> 
+                               <h2 class="user-name">Israel Mante</h2>
+                               <p class="user-profession">Lawyer</p>
+                               <button class="message-button">Learn More</button>
+                        </div>
+                
+
+                        <div class="card-item swiper-slide">
+                            <img src="images/Image - 5.jpg" alt="User Image" class="user-image"> 
+                            <h2 class="user-name">Gerald Amoako-Attah</h2>
+                            <p class="user-profession">Social Media Manager</p>
+                            <button class="message-button">Learn More</button>
+                     </div>
                 </div>
-            </div>    
+                <div class="swiper-pagination"></div> 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>   
+            </div>
         </div>
-        
-        
+        <!-- Linking custom Javascript -->
+        <script src="script.js"></script>
+        <!-- Connecting Javascript to the project -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
 </html>
