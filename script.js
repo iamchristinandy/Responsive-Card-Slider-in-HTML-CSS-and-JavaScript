@@ -5,27 +5,26 @@ const swiper = new Swiper('.swiper-container', {
   
     // If we need pagination
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+        el: '.swiper-pagination',
+        clickable: true,
       dynamicBullets: true
     },
   
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-
-    // Responsive breakpoints
-    breakpoints:{
-        0: {
-            slidesPerView:1
+    breakpoints: {
+        // when window width is <= 768px
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 10
         },
-        620: {
-            slidesPerView:2
-        },
+        // when window width is <= 1024px
         1024: {
-            slidesPerView:3
-        },
+            slidesPerView: 2,
+            spaceBetween: 20
+        }
     }
-  });
+});
