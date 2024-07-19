@@ -1,4 +1,4 @@
-const swiper = new Swiper('.slider-wrapper', {
+const swiper = new Swiper('.swiper-container', {
     loop: true,
     grabCursor:true,
     spaceBetween: 30,

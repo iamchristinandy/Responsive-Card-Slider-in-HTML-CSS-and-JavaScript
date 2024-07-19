@@ -21,10 +21,15 @@ body {
     max-width:1200px;
     margin: 0 70px 55px;
 }
+.card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
 .card-list .card-item {
     color: white;
     user-select: none;
-    /* width: 400px; */
     padding: 35px;
     display: flex;
     flex-direction: column;
