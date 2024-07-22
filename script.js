@@ -1,9 +1,9 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.slider-wrapper', {
     loop: true,
     grabCursor:true,
     spaceBetween: 30,
   
-    // If we need pagination
+    // Pagination bullets
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -15,10 +15,14 @@ const swiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+
     breakpoints: {
-        // when window width is <= 768px
+        0: {
+            slidesPerView:1
+        },
+        // when window width is >= 768px but <1024px
         768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10
         },
         // when window width is <= 1024px
